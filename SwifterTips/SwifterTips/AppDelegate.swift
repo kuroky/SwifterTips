@@ -3,7 +3,7 @@
 //  SwifterTips
 //
 //  Created by kuroky on 2018/8/24.
-//  Copyright © 2018年 Emucoo. All rights reserved.
+//  Copyright © 2018年 Kuroky. All rights reserved.
 //
 
 import UIKit
