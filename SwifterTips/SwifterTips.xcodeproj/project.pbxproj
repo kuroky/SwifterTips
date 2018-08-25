@@ -12,6 +12,10 @@
 		5B92E6B7212FBC5800812E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6B5212FBC5800812E4F /* Main.storyboard */; };
 		5B92E6B9212FBC5900812E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6B8212FBC5900812E4F /* Assets.xcassets */; };
 		5B92E6BC212FBC5900812E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6BA212FBC5900812E4F /* LaunchScreen.storyboard */; };
+		5B92E6C4212FBCED00812E4F /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6C3212FBCED00812E4F /* Resource.bundle */; };
+		5B92E6C7212FD02600812E4F /* TipsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6C6212FD02600812E4F /* TipsItem.swift */; };
+		5B92E6C9212FDB2900812E4F /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6C8212FDB2900812E4F /* json.json */; };
+		5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6CA212FDB6A00812E4F /* Untils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5B92E6B8212FBC5900812E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B92E6BB212FBC5900812E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B92E6BD212FBC5900812E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B92E6C3212FBCED00812E4F /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		5B92E6C6212FD02600812E4F /* TipsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsItem.swift; sourceTree = "<group>"; };
+		5B92E6C8212FDB2900812E4F /* json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
+		5B92E6CA212FDB6A00812E4F /* Untils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				5B92E6B1212FBC5800812E4F /* AppDelegate.swift */,
+				5B92E6C6212FD02600812E4F /* TipsItem.swift */,
 				5B92E6B3212FBC5800812E4F /* ViewController.swift */,
+				5B92E6CA212FDB6A00812E4F /* Untils.swift */,
 				5B92E6B5212FBC5800812E4F /* Main.storyboard */,
-				5B92E6B8212FBC5900812E4F /* Assets.xcassets */,
-				5B92E6BA212FBC5900812E4F /* LaunchScreen.storyboard */,
-				5B92E6BD212FBC5900812E4F /* Info.plist */,
+				5B92E6C5212FBCF800812E4F /* Resource */,
 			);
 			path = SwifterTips;
+			sourceTree = "<group>";
+		};
+		5B92E6C5212FBCF800812E4F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5B92E6C8212FDB2900812E4F /* json.json */,
+				5B92E6C3212FBCED00812E4F /* Resource.bundle */,
+				5B92E6B8212FBC5900812E4F /* Assets.xcassets */,
+				5B92E6BD212FBC5900812E4F /* Info.plist */,
+				5B92E6BA212FBC5900812E4F /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B92E6C9212FDB2900812E4F /* json.json in Resources */,
 				5B92E6BC212FBC5900812E4F /* LaunchScreen.storyboard in Resources */,
 				5B92E6B9212FBC5900812E4F /* Assets.xcassets in Resources */,
 				5B92E6B7212FBC5800812E4F /* Main.storyboard in Resources */,
+				5B92E6C4212FBCED00812E4F /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B92E6B4212FBC5800812E4F /* ViewController.swift in Sources */,
+				5B92E6C7212FD02600812E4F /* TipsItem.swift in Sources */,
+				5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */,
 				5B92E6B2212FBC5800812E4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCBW8CKASN;
-				INFOPLIST_FILE = SwifterTips/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwifterTips/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCBW8CKASN;
-				INFOPLIST_FILE = SwifterTips/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwifterTips/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
