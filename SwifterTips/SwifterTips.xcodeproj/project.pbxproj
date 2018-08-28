@@ -16,9 +16,14 @@
 		5B92E6C7212FD02600812E4F /* TipsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6C6212FD02600812E4F /* TipsItem.swift */; };
 		5B92E6C9212FDB2900812E4F /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6C8212FDB2900812E4F /* json.json */; };
 		5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6CA212FDB6A00812E4F /* Untils.swift */; };
+		5BB44F342135018A004E4B85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB44F332135018A004E4B85 /* DetailViewController.swift */; };
+		F005138181787D03CF1F3254 /* Pods_SwifterTips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0F3BF0BD4B8A6B14A076F2 /* Pods_SwifterTips.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0F3BF0BD4B8A6B14A076F2 /* Pods_SwifterTips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwifterTips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F601C94738B91F85C5650D /* Pods-SwifterTips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterTips.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwifterTips/Pods-SwifterTips.release.xcconfig"; sourceTree = "<group>"; };
+		554E4638CFE5DA13527F2D23 /* Pods-SwifterTips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterTips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwifterTips/Pods-SwifterTips.debug.xcconfig"; sourceTree = "<group>"; };
 		5B92E6AE212FBC5800812E4F /* SwifterTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifterTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B92E6B1212FBC5800812E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B92E6B3212FBC5800812E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		5B92E6C6212FD02600812E4F /* TipsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsItem.swift; sourceTree = "<group>"; };
 		5B92E6C8212FDB2900812E4F /* json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		5B92E6CA212FDB6A00812E4F /* Untils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untils.swift; sourceTree = "<group>"; };
+		5BB44F332135018A004E4B85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F005138181787D03CF1F3254 /* Pods_SwifterTips.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				5B92E6B0212FBC5800812E4F /* SwifterTips */,
 				5B92E6AF212FBC5800812E4F /* Products */,
+				769BB2B1FEB88F1A66A3BA3A /* Pods */,
+				A188D8DC0BD17AC80384E383 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +74,7 @@
 				5B92E6B1212FBC5800812E4F /* AppDelegate.swift */,
 				5B92E6C6212FD02600812E4F /* TipsItem.swift */,
 				5B92E6B3212FBC5800812E4F /* ViewController.swift */,
+				5BB44F332135018A004E4B85 /* DetailViewController.swift */,
 				5B92E6CA212FDB6A00812E4F /* Untils.swift */,
 				5B92E6B5212FBC5800812E4F /* Main.storyboard */,
 				5B92E6C5212FBCF800812E4F /* Resource */,
@@ -84,6 +94,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		769BB2B1FEB88F1A66A3BA3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				554E4638CFE5DA13527F2D23 /* Pods-SwifterTips.debug.xcconfig */,
+				29F601C94738B91F85C5650D /* Pods-SwifterTips.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A188D8DC0BD17AC80384E383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F3BF0BD4B8A6B14A076F2 /* Pods_SwifterTips.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B92E6C0212FBC5900812E4F /* Build configuration list for PBXNativeTarget "SwifterTips" */;
 			buildPhases = (
+				7AA501E07ED24AEFB617D412 /* [CP] Check Pods Manifest.lock */,
 				5B92E6AA212FBC5800812E4F /* Sources */,
 				5B92E6AB212FBC5800812E4F /* Frameworks */,
 				5B92E6AC212FBC5800812E4F /* Resources */,
+				F2CFA79C898619A9AA2A2F4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +181,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AA501E07ED24AEFB617D412 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwifterTips-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CFA79C898619A9AA2A2F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwifterTips/Pods-SwifterTips-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwifterTips/Pods-SwifterTips-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B92E6AA212FBC5800812E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -159,6 +235,7 @@
 			files = (
 				5B92E6B4212FBC5800812E4F /* ViewController.swift in Sources */,
 				5B92E6C7212FD02600812E4F /* TipsItem.swift in Sources */,
+				5BB44F342135018A004E4B85 /* DetailViewController.swift in Sources */,
 				5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */,
 				5B92E6B2212FBC5800812E4F /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +379,7 @@
 		};
 		5B92E6C1212FBC5900812E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554E4638CFE5DA13527F2D23 /* Pods-SwifterTips.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +398,7 @@
 		};
 		5B92E6C2212FBC5900812E4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F601C94738B91F85C5650D /* Pods-SwifterTips.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

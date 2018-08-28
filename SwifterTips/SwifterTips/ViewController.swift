@@ -49,7 +49,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let item = dataList[indexPath.section]
-        if indexPath.section == 0 {
+        if indexPath.row == 0 {
             cell.textLabel?.text = indexTitle(indexPath: indexPath) + item.title!
         } else {
             let subItem = item.items![indexPath.row - 1]
@@ -60,7 +60,6 @@ extension ViewController: UITableViewDataSource {
 }
 
 func indexTitle(indexPath: IndexPath) -> String {
-    
     var sectionTitle = String(indexPath.section + 1) + "."
     if indexPath.row == 0 {
         sectionTitle += " "
@@ -73,12 +72,13 @@ func indexTitle(indexPath: IndexPath) -> String {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let item = dataList[indexPath.section]
-        if indexPath.section != 0 {
-            
+        if indexPath.row != 0 {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let detailVC = storyBoard.instantiateViewController(withIdentifier: "DetailViewController")
+            (detailVC as! DetailViewController).fileName = ""
+            self.navigationController?.pushViewController(detailVC, animated: true)
             return
         }
         
