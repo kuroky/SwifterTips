@@ -69,15 +69,21 @@ func indexTitle(indexPath: IndexPath) -> String {
     return sectionTitle
 }
 
+func fileName(indexPath: IndexPath) -> String {
+    return String(indexPath.section + 1) + "." + String(indexPath.row)
+}
+
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = dataList[indexPath.section]
         if indexPath.row != 0 {
+            let subItem = item.items![indexPath.row - 1]
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let detailVC = storyBoard.instantiateViewController(withIdentifier: "DetailViewController")
-            (detailVC as! DetailViewController).fileName = ""
+            let detailVC = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            detailVC.fileName = fileName(indexPath: indexPath)
+            detailVC.naviTitle = subItem.title
             self.navigationController?.pushViewController(detailVC, animated: true)
             return
         }

@@ -70,9 +70,22 @@
                     <view key="view" contentMode="scaleToFill" id="3zN-0s-r1i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LCu-p2-sOH">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.1333333333" green="0.63529411759999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LCu-p2-sOH" firstAttribute="centerX" secondItem="3zN-0s-r1i" secondAttribute="centerX" id="5LC-CH-Fqj"/>
+                            <constraint firstItem="LCu-p2-sOH" firstAttribute="centerY" secondItem="3zN-0s-r1i" secondAttribute="centerY" id="EXT-RV-C2D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wNg-xQ-1WO"/>
                     </view>
+                    <connections>
+                        <outlet property="hudView" destination="LCu-p2-sOH" id="sof-WB-2Hj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nK-xh-eFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

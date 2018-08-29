@@ -9,7 +9,7 @@
 import Foundation
 
 /// 从bundle文件取string
-func json(fileName: String) -> String? {
+func loadResourceFile(fileName: String) -> String? {
     
     guard let bundlePath = Bundle.main.path(forResource: "Resource", ofType: "bundle") else {
         return nil
