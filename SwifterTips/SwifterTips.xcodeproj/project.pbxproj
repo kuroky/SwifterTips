@@ -16,6 +16,7 @@
 		5B92E6C7212FD02600812E4F /* TipsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6C6212FD02600812E4F /* TipsItem.swift */; };
 		5B92E6C9212FDB2900812E4F /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B92E6C8212FDB2900812E4F /* json.json */; };
 		5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92E6CA212FDB6A00812E4F /* Untils.swift */; };
+		5B9D0B5C21368B9400E0224B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D0B5B21368B9400E0224B /* Test.swift */; };
 		5BB44F342135018A004E4B85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB44F332135018A004E4B85 /* DetailViewController.swift */; };
 		F005138181787D03CF1F3254 /* Pods_SwifterTips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0F3BF0BD4B8A6B14A076F2 /* Pods_SwifterTips.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		5B92E6C6212FD02600812E4F /* TipsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsItem.swift; sourceTree = "<group>"; };
 		5B92E6C8212FDB2900812E4F /* json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		5B92E6CA212FDB6A00812E4F /* Untils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untils.swift; sourceTree = "<group>"; };
+		5B9D0B5B21368B9400E0224B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5BB44F332135018A004E4B85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 		5B92E6B0212FBC5800812E4F /* SwifterTips */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D0B5B21368B9400E0224B /* Test.swift */,
 				5B92E6B1212FBC5800812E4F /* AppDelegate.swift */,
 				5B92E6C6212FD02600812E4F /* TipsItem.swift */,
 				5B92E6B3212FBC5800812E4F /* ViewController.swift */,
@@ -187,15 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwifterTips-checkManifestLockResult.txt",
 			);
@@ -209,15 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwifterTips/Pods-SwifterTips-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
 			);
@@ -238,6 +233,7 @@
 				5BB44F342135018A004E4B85 /* DetailViewController.swift in Sources */,
 				5B92E6CB212FDB6A00812E4F /* Untils.swift in Sources */,
 				5B92E6B2212FBC5800812E4F /* AppDelegate.swift in Sources */,
+				5B9D0B5C21368B9400E0224B /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

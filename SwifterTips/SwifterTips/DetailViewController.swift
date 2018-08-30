@@ -27,6 +27,12 @@ class DetailViewController: UIViewController {
     
     func setupData() {
         guard let json = loadResourceFile(fileName: fileName) else {
+            let controller = UIAlertController(title: naviTitle, message: "no data", preferredStyle: .alert)
+            let alerAction = UIAlertAction(title: "Back", style: .default) { action in
+                self.navigationController?.popViewController(animated: true)
+            }
+            controller.addAction(alerAction)
+            self.present(controller, animated: true)
             return
         }
         

@@ -17,6 +17,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupData()
         setupUI()
+        
+        var n = 3
+        let incrementor = makeIncrementor(addNumber: n)
+        incrementor(&n)
+        print(incrementor, n)
+    }
+    
+    func makeIncrementor(addNumber: Int) -> ((inout Int) -> ()) {
+        func incrementor(variable: inout Int) -> () {
+            variable += addNumber;
+        }
+        return incrementor;
     }
     
     func setupData() {
